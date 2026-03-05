@@ -1,62 +1,422 @@
-CLIENT STORIES
-Real results from senior professionals who stopped settling
-Engineers, executives, and leaders who chose a different path — and found clarity, confidence, and careers worth having.
-VIDEO TESTIMONIALS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Testimonials – Ben Fox Coaching</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #E8F4FD;
+    --charcoal: #1E1E1E;
+    --warm-mid: #6B6560;
+    --accent: #8B5E3C;
+    --accent-light: #D4A97A;
+    --rule: #DDD8D0;
+  }
 
-Morgan Dunn
-Career Assessment & Coach, Wanderlust Careers
+  * { box-sizing: border-box; margin: 0; padding: 0; }
 
-Paul Stockhoff
-Designer, MFGR Designs
+  body {
+    background: var(--cream);
+    color: var(--charcoal);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+  }
 
-John Blevens
-Americas' Solution Partner Program Manager, Keysight Technologies (HP)
+  .page-wrapper {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 80px 32px 120px;
+  }
 
-Jackie Meister
-RN Case Manager, The James Cancer Hospital
+  .page-header {
+    text-align: center;
+    margin-bottom: 72px;
+  }
 
-Sandy Cloud
-Owner, Freshen My Home LLC
-FEATURED TESTIMONIAL
-Mike Buzzetti
-Fractional CTO — Former Principal Engineer, The New York Times
+  .eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 20px;
+  }
 
-WRITTEN TESTIMONIALS
-"
-I used to think about money constantly and was reluctant to risk any income — then ended up getting a huge pay raise through the process of working with Ben. He challenged me to evaluate both the practical and inner considerations that helped me decide quitting was the right move. Beyond the career breakthrough, that period was one of the more joyful of my life.
-Manu Lakshmanan
-Director, Strategy — Global Ocular Health & Pharmaceuticals, Alcon
-"
-I found Ben at a crossroads, weighed down by the urge to jump straight back into the grind. He helped me step back, give myself permission to breathe, and let clarity arrive on its own. He reframed risk as something I'd earned the right to take without fear. By the time I re-engaged my job search, I was genuinely changed — moving forward with more intention and peace than I'd felt in years.
-Kelsey Golden
-Former Software Engineering Manager, Guild
-"
-For over 20 years I sacrificed my own needs for the job. My health was suffering, my relationships were strained. I was always tired, anxious, and had lost my edge. I quit with nothing else lined up. Ben helped me see what I was blind to during my career — and helped me forge a different path. I now know I don't ever have to go back to the way it was before.
-G.
-Former VP of Accounting — 22 years in the field
-"
-Ben asks smart questions that challenge your thinking in the best way. More than just preparing for the next role, he helps you see the bigger picture — how your work fits into your life and long-term goals. And you don't need to be burned out to work with Ben. If you have big dreams and want a strong support team to achieve them, he's exactly who you want.
-Elise Marcotte, M.Sc OLY — 2x Olympian
-Global Talent Intelligence Enablement Lead, Indeed
-"
-Ben ended up being a calm voice in the storm — far more interested in making sure I took a breath and listened to my gut than in getting me back on the employment treadmill. He understands that your career is one layer of your life, and helps you navigate all those layers simultaneously.
-Liz C.
-Healthcare Executive
-"
-I was lost in my career transition — stuck in negative thought patterns about what I could or couldn't do next. Ben helped me shift from fear and uncertainty to curiosity and confidence. I broke free from limiting beliefs and took a bold step forward.
-Alia Crook
-Product Marketing Manager, CloudTrucks
-"
-I navigated a daunting career transition exploring multiple options — never before had I dealt with ambiguity of this magnitude. Ben challenged my thinking and I walked away with a deeper understanding of my strengths and clarity on my values. That's a gift that keeps on giving.
-Edna Ambundo
-Former VP Research & Innovation, L'Oréal
-"
-My job was easy, so I was reluctant to leave — but I was bummed out on a spiritual level. Ben showed me what I really value in the workplace and helped me take the leap. Thanks to his guidance, I'm at a job that excites me, with people I can call comrades and friends.
-Sarah C.
-English Teacher, Specialized Arts School — NYC
-"
-When I was transitioning into my tech career, Ben's guidance was thoughtful, practical, and exactly what I needed.
-Raphael Soto
-Android Developer, United Parks & Resorts
-Ready to stop settling and find work worth having?
-WATCH THE FREE TRAINING →
+  .page-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--charcoal);
+    max-width: 640px;
+    margin: 0 auto 20px;
+  }
+
+  .page-header p {
+    font-size: 17px;
+    color: var(--warm-mid);
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--warm-mid);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 32px;
+    margin-bottom: 80px;
+  }
+
+  .video-card {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  .video-card:hover {
+    box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+    transform: translateY(-3px);
+  }
+
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    background: #111;
+  }
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: none;
+  }
+
+  .video-meta {
+    padding: 18px 20px 20px;
+    border-top: 1px solid var(--rule);
+  }
+  .video-meta .name {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-bottom: 3px;
+  }
+  .video-meta .title {
+    font-size: 12px;
+    color: var(--warm-mid);
+    line-height: 1.4;
+  }
+
+  .senja-card {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    padding: 24px;
+    margin-bottom: 80px;
+  }
+  .senja-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-bottom: 3px;
+  }
+  .senja-title {
+    font-size: 12px;
+    color: var(--warm-mid);
+    margin-bottom: 20px;
+  }
+
+  .written-grid {
+    display: grid;
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+
+  .quote-card {
+    padding: 36px 40px;
+    background: #fff;
+    border-radius: 4px;
+    border-left: 3px solid var(--accent-light);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+    position: relative;
+    animation: fadeUp 0.6s ease both;
+  }
+
+  .quote-mark {
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    line-height: 1;
+    color: var(--accent-light);
+    opacity: 0.4;
+    position: absolute;
+    top: 16px;
+    left: 28px;
+    pointer-events: none;
+  }
+
+  .quote-text {
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--charcoal);
+    padding-top: 24px;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .quote-attribution {
+    border-top: 1px solid var(--rule);
+    padding-top: 16px;
+  }
+  .quote-attribution .attr-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-bottom: 2px;
+  }
+  .quote-attribution .attr-title {
+    font-size: 12px;
+    color: var(--warm-mid);
+    line-height: 1.4;
+  }
+
+  .cta-block {
+    text-align: center;
+    padding: 60px 40px;
+    background: var(--charcoal);
+    border-radius: 4px;
+    color: #fff;
+  }
+  .cta-block p {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(20px, 3vw, 28px);
+    font-weight: 400;
+    font-style: italic;
+    color: #fff;
+    max-width: 520px;
+    margin: 0 auto 28px;
+  }
+  .cta-btn {
+    display: inline-block;
+    background: var(--accent-light);
+    color: var(--charcoal);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 2px;
+    transition: background 0.2s ease;
+  }
+  .cta-btn:hover { background: #e0b988; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 600px) {
+    .page-wrapper { padding: 48px 20px 80px; }
+    .video-grid { grid-template-columns: 1fr; }
+    .quote-card { padding: 28px 24px; }
+  }
+</style>
+</head>
+<body>
+<div class="page-wrapper">
+
+  <header class="page-header">
+    <div class="eyebrow">Ben Fox Coaching</div>
+    <h1>Real results from senior professionals who stopped settling</h1>
+    <p>Engineers, executives, and leaders who chose a different path — and found clarity, confidence, and careers worth having.</p>
+  </header>
+
+  <div class="section-label">Video testimonials</div>
+
+  <div class="video-grid">
+
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/Mdnaj-00ouM" allowfullscreen loading="lazy" title="Morgan Dunn testimonial"></iframe>
+      </div>
+      <div class="video-meta">
+        <div class="name">Morgan Dunn</div>
+        <div class="title">Career Assessment & Coach, Wanderlust Careers</div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/UnnUswUl_JE" allowfullscreen loading="lazy" title="Paul Stockhoff testimonial"></iframe>
+      </div>
+      <div class="video-meta">
+        <div class="name">Paul Stockhoff</div>
+        <div class="title">Designer, MFGR Designs</div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/On26-EKrNW8" allowfullscreen loading="lazy" title="John Blevens testimonial"></iframe>
+      </div>
+      <div class="video-meta">
+        <div class="name">John Blevens</div>
+        <div class="title">Americas' Solution Partner Program Manager, Keysight Technologies (HP)</div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/USLRS4buDJM" allowfullscreen loading="lazy" title="Jackie Meister testimonial"></iframe>
+      </div>
+      <div class="video-meta">
+        <div class="name">Jackie Meister</div>
+        <div class="title">RN Case Manager, The James Cancer Hospital</div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/aZ44GYB8wPE" allowfullscreen loading="lazy" title="Sandy Cloud testimonial"></iframe>
+      </div>
+      <div class="video-meta">
+        <div class="name">Sandy Cloud</div>
+        <div class="title">Owner, Freshen My Home LLC</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section-label">Featured testimonial</div>
+  <div class="senja-card">
+    <div class="senja-name">Mike Buzzetti</div>
+    <div class="senja-title">Fractional CTO — Former Principal Engineer, The New York Times</div>
+    <script src="https://widget.senja.io/widget/fc847b4a-8179-40cf-8eea-7ccd9d0a4e1c/platform.js" type="text/javascript" async></script>
+    <div class="senja-embed" data-id="fc847b4a-8179-40cf-8eea-7ccd9d0a4e1c" data-mode="shadow" data-lazyload="false" style="display: block; width: 100%;"></div>
+  </div>
+
+  <div class="section-label">Written testimonials</div>
+
+  <div class="written-grid">
+
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="quote-text">I used to think about money constantly and was reluctant to risk any income — then ended up getting a huge pay raise through the process of working with Ben. He challenged me to evaluate both the practical and inner considerations that helped me decide quitting was the right move. Beyond the career breakthrough, that period was one of the more joyful of my life.</div>
+      <div class="quote-attribution">
+        <div class="attr-name">Manu Lakshmanan</div>
+        <div class="attr-title">Director, Strategy — Global Ocular Health & Pharmaceuticals, Alcon</div>
+      </div>
+    </div>
+
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="quote-text">I found Ben at a crossroads, weighed down by the urge to jump straight back into the grind. He helped me step back, give myself permission to breathe, and let clarity arrive on its own. He reframed risk as something I'd earned the right to take without fear. By the time I re-engaged my job search, I was genuinely changed — moving forward with more intention and peace than I'd felt in years.</div>
+      <div class="quote-attribution">
+        <div class="attr-name">Kelsey Golden</div>
+        <div class="attr-title">Former Software Engineering Manager, Guild</div>
+      </div>
+    </div>
+
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="quote-text">For over 20 years I sacrificed my own needs for the job. My health was suffering, my relationships were strained. I was always tired, anxious, and had lost my edge. I quit with nothing else lined up. Ben helped me see what I was blind to during my career — and helped me forge a different path. I now know I don't ever have to go back to the way it was before.</div>
+      <div class="quote-attribution">
+        <div class="attr-name">G.</div>
+        <div class="attr-title">Former VP of Accounting — 22 years in the field</div>
+      </div>
+    </div>
+
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="quote-text">Ben asks smart questions that challenge your thinking in the best way. More than just preparing for the next role, he helps you see the bigger picture — how your work fits into your life and long-term goals. And you don't need to be burned out to work with Ben. If you have big dreams and want a strong support team to achieve them, he's exactly who you want.</div>
+      <div class="quote-attribution">
+        <div class="attr-name">Elise Marcotte, M.Sc OLY — 2x Olympian</div>
+        <div class="attr-title">Global Talent Intelligence Enablement Lead, Indeed</div>
+      </div>
+    </div>
+
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="quote-text">Ben ended up being a calm voice in the storm — far more interested in making sure I took a breath and listened to my gut than in getting me back on the employment treadmill. He understands that your career is one layer of your life, and helps you navigate all those layers simultaneously.</div>
+      <div class="quote-attribution">
+        <div class="attr-name">Liz C.</div>
+        <div class="attr-title">Healthcare Executive</div>
+      </div>
+    </div>
+
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="quote-text">I was lost in my career transition — stuck in negative thought patterns about what I could or couldn't do next. Ben helped me shift from fear and uncertainty to curiosity and confidence. I broke free from limiting beliefs and took a bold step forward.</div>
+      <div class="quote-attribution">
+        <div class="attr-name">Alia Crook</div>
+        <div class="attr-title">Product Marketing Manager, CloudTrucks</div>
+      </div>
+    </div>
+
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="quote-text">I navigated a daunting career transition exploring multiple options — never before had I dealt with ambiguity of this magnitude. Ben challenged my thinking and I walked away with a deeper understanding of my strengths and clarity on my values. That's a gift that keeps on giving.</div>
+      <div class="quote-attribution">
+        <div class="attr-name">Edna Ambundo</div>
+        <div class="attr-title">Former VP Research & Innovation, L'Oréal</div>
+      </div>
+    </div>
+
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="quote-text">My job was easy, so I was reluctant to leave — but I was bummed out on a spiritual level. Ben showed me what I really value in the workplace and helped me take the leap. Thanks to his guidance, I'm at a job that excites me, with people I can call comrades and friends.</div>
+      <div class="quote-attribution">
+        <div class="attr-name">Sarah C.</div>
+        <div class="attr-title">English Teacher, Specialized Arts School — NYC</div>
+      </div>
+    </div>
+
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="quote-text">When I was transitioning into my tech career, Ben's guidance was thoughtful, practical, and exactly what I needed.</div>
+      <div class="quote-attribution">
+        <div class="attr-name">Raphael Soto</div>
+        <div class="attr-title">Android Developer, United Parks & Resorts</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cta-block">
+    <p>Ready to stop settling and find work worth having?</p>
+    <a href="https://www.loom.com/share/4232bb2bcbd34901bbf55581675c4c19" class="cta-btn">Watch the free training →</a>
+  </div>
+
+</div>
+</body>
+</html>
