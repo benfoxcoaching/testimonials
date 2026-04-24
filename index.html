@@ -31,6 +31,39 @@
     padding: 80px 32px 120px;
   }
 
+  /* ABOUT SECTION */
+  .about-block {
+    background: #fff;
+    border-radius: 4px;
+    padding: 48px 52px;
+    margin-bottom: 72px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    border-top: 3px solid var(--accent);
+  }
+
+  .about-block h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 20px;
+  }
+
+  .about-block p {
+    font-size: 16px;
+    color: var(--charcoal);
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
+
+  .about-block p:last-child {
+    margin-bottom: 0;
+    font-style: italic;
+    color: var(--warm-mid);
+  }
+
   .page-header {
     text-align: center;
     margin-bottom: 72px;
@@ -214,6 +247,7 @@
     background: var(--charcoal);
     border-radius: 4px;
     color: #fff;
+    margin-bottom: 0;
   }
   .cta-block p {
     font-family: 'Playfair Display', serif;
@@ -240,6 +274,37 @@
   }
   .cta-btn:hover { background: #e0b988; }
 
+  /* FOOTER */
+  .page-footer {
+    margin-top: 60px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule);
+    text-align: center;
+  }
+
+  .page-footer .footer-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-bottom: 8px;
+  }
+
+  .page-footer .footer-details {
+    font-size: 13px;
+    color: var(--warm-mid);
+    line-height: 1.8;
+  }
+
+  .page-footer .footer-details a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .page-footer .footer-details a:hover {
+    text-decoration: underline;
+  }
+
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(16px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -249,11 +314,21 @@
     .page-wrapper { padding: 48px 20px 80px; }
     .video-grid { grid-template-columns: 1fr; }
     .quote-card { padding: 28px 24px; }
+    .about-block { padding: 32px 28px; }
   }
 </style>
 </head>
 <body>
 <div class="page-wrapper">
+
+  <div class="about-block">
+    <h2>About Ben Fox Coaching</h2>
+    <p>Ben Fox is a New York City-based career transformation coach specializing in engineering leaders who are done waiting for the "right time" to make a change to entrepreneurship.</p>
+    <p>In 2022, Ben walked away from a toxic job with nothing lined up and it turned out to be the best decision he ever made. That experience, combined with a decade of coaching, shapes how he works with clients: with honesty, accountability, and a deep belief that the people he works with are more capable than they're giving themselves credit for.</p>
+    <p>People often describe feeling a sense of calm when they talk to Ben, the kind that makes it easy to open up quickly and honestly. He pairs that with high emotional intelligence and a no-nonsense New York directness. He won't let you talk down to yourself, and he won't let you off the hook either.</p>
+    <p>Ben works with clients as a real partner: sharing his own story, holding the mirror up, and staying in your corner long after the session ends. Many clients say they can still hear his voice encouraging them when he's not in the room.</p>
+    <p>If you're a software engineering leader sitting on something you want to build, Ben helps you stop waiting and start moving.</p>
+  </div>
 
   <header class="page-header">
     <div class="eyebrow">Ben Fox Coaching</div>
@@ -328,6 +403,15 @@
   <div class="section-label">Written testimonials</div>
 
   <div class="written-grid">
+
+    <div class="quote-card">
+      <div class="quote-mark">"</div>
+      <div class="quote-text">When I started working with Ben, I was overwhelmed and confused about whether I needed to try something new. Ben's program gave me the structure and accountability to dig really deep, ask myself what was most important now and in the future, and gave me new ideas about what my next phase of life might look like. I put a renewed focus on my health, was diagnosed with ADHD, started a new weight loss journey, and reinforced my prioritization of my family above work. While I ultimately decided to stay in my current role, I found new ways to shift my priorities to maximize impact and fulfillment to make my role into something I felt confident would increase my visibility and value without burning me out.</div>
+      <div class="quote-attribution">
+        <div class="attr-name">Natalie White</div>
+        <div class="attr-title">Principal Solutions Architect, Amazon Web Services (AWS)</div>
+      </div>
+    </div>
 
     <div class="quote-card">
       <div class="quote-mark">"</div>
@@ -416,6 +500,14 @@
     <p>Ready to stop settling and find work worth having?</p>
     <a href="https://www.loom.com/share/4232bb2bcbd34901bbf55581675c4c19" class="cta-btn">Watch the free training →</a>
   </div>
+
+  <footer class="page-footer">
+    <div class="footer-name">Ben Fox Coaching</div>
+    <div class="footer-details">
+      1442 Bedford Ave, Brooklyn, NY 11216<br>
+      <a href="tel:7185004611">(718) 500-4611</a>
+    </div>
+  </footer>
 
 </div>
 </body>
